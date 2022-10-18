@@ -1,4 +1,4 @@
-package arr;
+package array;
 //https://leetcode.com/problems/single-number/
 
 public class SingleNumber {

@@ -1,4 +1,4 @@
-package arr;
+package array;
 
 /*2D Arrays
         Given 2D array calculate the sum of diagonal elements.

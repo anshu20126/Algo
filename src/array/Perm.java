@@ -1,4 +1,4 @@
-package arr;
+package array;
 
 public class Perm {
     public static void main(String[] args) {

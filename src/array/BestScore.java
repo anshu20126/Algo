@@ -1,4 +1,4 @@
-package arr;
+package array;
 
 /*Best Score
         Given an array, write a function to get first, second best scores from the array.
