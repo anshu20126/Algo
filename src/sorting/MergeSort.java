@@ -1,7 +1,7 @@
-/*
 package sorting;
 
 public class MergeSort {
+
   static void merge(int[] A, int left, int middle, int right) {
     int[] leftTmpArray = new int[middle-left+2];
     int[] rightTmpArray = new int[right-middle+1];
@@ -11,6 +11,7 @@ public class MergeSort {
     for (int i=0; i<right-middle; i++) {
       rightTmpArray[i] = A[middle+1+i];
     }
+
 
     leftTmpArray[middle-left+1] = Integer.MAX_VALUE;
     rightTmpArray[right-middle] = Integer.MAX_VALUE;
@@ -24,8 +25,11 @@ public class MergeSort {
         A[k] = rightTmpArray[j];
         j++;
       }
+
     }
+
   }
+
   public static void mergeSort(int[] Array, int left, int right) {
     if (right > left) {
       int m = (left+right)/2;
@@ -35,15 +39,12 @@ public class MergeSort {
     }
   }
 
-  public static void main(String []args) {
-    int[] array = {4, 5, 1, 2, 8, 4, 9};
-    int right;int left;
 
-mergeSort(array,left,right);
-    for (int i = 0; i < array.length; i++) {
+
+	public static void printArray(int []array) {
+		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]+"  ");
 		}
 	}
 
 }
-*/
