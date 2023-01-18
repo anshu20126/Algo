@@ -9,8 +9,6 @@ public class InsertionSort {
             System.out.print(j + "  ");
         }
     }
-
-    // InsertionSort
     private static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i], j = i;

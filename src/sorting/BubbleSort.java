@@ -6,7 +6,6 @@ public class BubbleSort {
         bubbleSort(arr);
         printArray(arr);
     }
-
     private static void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -16,11 +15,9 @@ public class BubbleSort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
-
             }
         }
     }
-
     private static void printArray(int[] arr) {
         //int n = arr.length;
         for (int j : arr) {

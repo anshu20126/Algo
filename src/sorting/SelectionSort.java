@@ -3,13 +3,11 @@ package sorting;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {3, 4, 2, 2, 5, 8, 9};
-        SelectionSort sc = new SelectionSort();
-        sc.selectionSort(arr);
+        selectionSort(arr);
         for (int j : arr) {
             System.out.print(j + "  ");
         }
     }
-
     static void selectionSort(int[] a) {
         for (int j = 0; j < a.length; j++) {
             int minimumIndex = j;

@@ -1,4 +1,5 @@
 package binarysearch;
+//https://leetcode.com/problems/search-insert-position/
 
 public class SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {
@@ -13,17 +14,13 @@ public class SearchInsertPosition {
             } else {
                 start = mid + 1;
             }
-           // if (target)
         }
-        return -1;
-
+        return start;
     }
 
     public static void main(String[] args) {
-
         int[] arr = {1,3,5,6};
-
-        int target = 5;
+        int target = 7;
         System.out.println(searchInsert(arr, target));
     }
 }

@@ -1,5 +1,5 @@
 package sorting;
-
+//https://www.geeksforgeeks.org/merge-sort/
 public class MergeSort {
 
   static void merge(int[] A, int left, int middle, int right) {
@@ -11,7 +11,6 @@ public class MergeSort {
     for (int i=0; i<right-middle; i++) {
       rightTmpArray[i] = A[middle+1+i];
     }
-
 
     leftTmpArray[middle-left+1] = Integer.MAX_VALUE;
     rightTmpArray[right-middle] = Integer.MAX_VALUE;
@@ -27,9 +26,7 @@ public class MergeSort {
       }
 
     }
-
   }
-
   public static void mergeSort(int[] Array, int left, int right) {
     if (right > left) {
       int m = (left+right)/2;
@@ -38,13 +35,9 @@ public class MergeSort {
       merge(Array, left, m, right);
     }
   }
-
-
-
-	public static void printArray(int []array) {
+  public static void printArray(int []array) {
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]+"  ");
 		}
 	}
-
 }
