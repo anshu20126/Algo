@@ -14,7 +14,6 @@ public class TwoDArray {
         }
         return sum;
     }
-
     public static void main(String[] args) {
         int[][] myArray2D = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         System.out.println(sumDiagonal(myArray2D));
