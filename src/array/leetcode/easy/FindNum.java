@@ -1,4 +1,4 @@
-package array;
+package array.leetcode.easy;
 
 public class FindNum {
     public static void main(String[] args) {

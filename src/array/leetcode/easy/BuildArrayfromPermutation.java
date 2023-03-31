@@ -1,4 +1,4 @@
-package array.leetcodeEasy;
+package array.leetcode.easy;
 //https://leetcode.com/problems/build-array-from-permutation/
 
 import java.util.Arrays;

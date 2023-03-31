@@ -1,4 +1,4 @@
-package array.leetcodeEasy;
+package array.leetcode.easy;
 //https://leetcode.com/problems/concatenation-of-array/
 
 import java.util.Arrays;
