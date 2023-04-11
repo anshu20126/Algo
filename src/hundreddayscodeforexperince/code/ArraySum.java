@@ -1,4 +1,4 @@
-package hundreddayscodeforexperince.inetviewGivenQuestion;
+package hundreddayscodeforexperince.code;
 
 public class ArraySum {
     public static void main(String[] args) {

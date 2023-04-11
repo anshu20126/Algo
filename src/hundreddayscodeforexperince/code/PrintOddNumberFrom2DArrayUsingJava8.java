@@ -1,4 +1,4 @@
-package hundreddayscodeforexperince.inetviewGivenQuestion;
+package hundreddayscodeforexperince.code;
 
 import java.util.Arrays;
 

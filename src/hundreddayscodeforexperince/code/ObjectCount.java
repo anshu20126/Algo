@@ -1,4 +1,4 @@
-package hundreddayscodeforexperince.inetviewGivenQuestion;
+package hundreddayscodeforexperince.code;
 
 public class ObjectCount {
     private static int count = 0;

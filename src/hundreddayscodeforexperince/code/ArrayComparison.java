@@ -1,4 +1,4 @@
-package hundreddayscodeforexperince.inetviewGivenQuestion;
+package hundreddayscodeforexperince.code;
 
 public class ArrayComparison {
     public static <T> boolean areArraysEqual(T[] array1, T[] array2) {

@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.leetcode.easy;
 //https://leetcode.com/problems/search-insert-position/
 
 public class SearchInsertPosition {

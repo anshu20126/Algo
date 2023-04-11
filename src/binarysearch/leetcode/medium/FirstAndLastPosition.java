@@ -1,4 +1,4 @@
-package binarysearch.lecture;
+package binarysearch.leetcode.medium;
 
 public class FirstAndLastPosition {
     public static void main(String[] args) {

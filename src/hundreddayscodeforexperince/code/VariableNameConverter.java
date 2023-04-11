@@ -1,4 +1,4 @@
-package hundreddayscodeforexperince.inetviewGivenQuestion;
+package hundreddayscodeforexperince.code;
 
 public class VariableNameConverter {
     public static String javaToCpp(String javaName) {
