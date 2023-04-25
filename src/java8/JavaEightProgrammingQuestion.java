@@ -34,7 +34,7 @@ public class JavaEightProgrammingQuestion {
                 .collect(Collectors.toList());
         System.out.println(uniqueElement);
 
-        //3.find first non repeat  element from a given string
+        //4.find first non repeat  element from a given string
         String firstNonRepeatElement = Arrays.stream(input.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
                 .entrySet()
@@ -43,7 +43,7 @@ public class JavaEightProgrammingQuestion {
                 .findFirst().get().getKey();
         System.out.println("1st non repeat element " + firstNonRepeatElement);
 
-        //4. java program to find second highest number from given array
+        //5. java program to find second-highest number from given array
         int[] number = {5, 9, 11, 2, 8, 21, 1};
         Integer secondHighestNumber = Arrays.stream(number).boxed()
                 .sorted(Comparator.reverseOrder())
@@ -52,14 +52,14 @@ public class JavaEightProgrammingQuestion {
                 .get();
         System.out.println(secondHighestNumber);
 
-        //java program to find longest string from given array
+        //6.java program to find longest string from given array
         String[] strArray = {"java", "techie", "springboot", "microservices"};
         String longestString = Arrays.stream(strArray)
                 .reduce((word1, word2) -> word1.length() > word2.length() ? word1 : word2)
                 .get();
         System.out.println(longestString);
 
-        //5 find all element from given array which started from 1
+        //7. find all element from given array which started from 1
         List<String> stringList = Arrays.stream(number)
                 .boxed()
                 .map(s -> s + "")

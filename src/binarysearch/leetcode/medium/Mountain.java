@@ -1,4 +1,4 @@
-package binarysearch.lecture;
+package binarysearch.leetcode.medium;
 
 public class Mountain {
     public static void main(String[] args) {

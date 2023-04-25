@@ -1,4 +1,4 @@
-package binarysearch.lecture;
+package binarysearch.leetcode.medium;
 
 // https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
 public class RBS {
