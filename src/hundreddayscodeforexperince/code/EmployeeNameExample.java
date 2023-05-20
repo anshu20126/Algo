@@ -5,15 +5,15 @@ import java.util.stream.Collectors;
 
 public class EmployeeNameExample {
     public static void main(String[] args) {
-        List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee(1, "John", 50000));
-        employees.add(new Employee(2, "Jane", 60000));
-        employees.add(new Employee(3, "John", 70000));
-        employees.add(new Employee(4, "Mary", 55000));
-        employees.add(new Employee(5, "John", 45000));
+        List<Employee2> employees = new ArrayList<>();
+        employees.add(new Employee2(1, "John", 50000));
+        employees.add(new Employee2(2, "Jane", 60000));
+        employees.add(new Employee2(3, "John", 70000));
+        employees.add(new Employee2(4, "Mary", 55000));
+        employees.add(new Employee2(5, "John", 45000));
 
-        Map<String, List<Employee>> employeesByName = employees.stream()
-                .collect(Collectors.groupingBy(Employee::getName));
+        Map<String, List<Employee2>> employeesByName = employees.stream()
+                .collect(Collectors.groupingBy(Employee2::getName));
 
         List<String> sameNameEmployees = employeesByName.entrySet().stream()
                 .filter(entry -> entry.getValue().size() > 1)
@@ -25,7 +25,7 @@ public class EmployeeNameExample {
 
         for (String name : sameNameEmployees) {
             List<Integer> salaries = employeesByName.get(name).stream()
-                    .map(Employee::getSalary)
+                    .map(Employee2::getSalary)
                     .sorted()
                     .collect(Collectors.toList());
 
@@ -34,12 +34,12 @@ public class EmployeeNameExample {
     }
 }
 
-class Employee {
+class Employee2 {
     private final int id;
     private final String name;
     private final int salary;
 
-    public Employee(int id, String name, int salary) {
+    public Employee2(int id, String name, int salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;

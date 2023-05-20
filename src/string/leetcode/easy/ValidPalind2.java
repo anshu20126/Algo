@@ -9,24 +9,24 @@ public class ValidPalind2 {
     }
 
     static boolean isPalindrome(String s) {
-        int i = 0;
-        int j = s.length() - 1;
-        while (i < j) {
-            if (s.charAt(i) != s.charAt(j)) {
-                return (checkPalindrome(s, i, j - 1) || checkPalindrome(s, i + 1, j));
+        int start = 0;
+        int end = s.length() - 1;
+        while (start < end) {
+            if (s.charAt(start) != s.charAt(end)) {
+                return (checkPalindrome(s, start, end - 1) || checkPalindrome(s, start + 1, end));
             }
-            i++;
-            j--;
+            start++;
+            end--;
         }
         return true;
     }
-    public static boolean checkPalindrome(String s, int i, int j) {
-        while (i < j) {
-            if (s.charAt(i) != s.charAt(j)) {
+    public static boolean checkPalindrome(String s, int start, int end) {
+        while (start < end) {
+            if (s.charAt(start) != s.charAt(end)) {
                 return false;
             }
-            i++;
-            j--;
+            start++;
+            end--;
         }
         return true;
     }

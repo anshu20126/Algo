@@ -10,9 +10,9 @@ public class LengthofLastWord {
 
     public static int lengthOfLastWord(String string) {
         int count = 0;
-        String humHaiYhaKeHero = string.trim();
-        for (int i = humHaiYhaKeHero.length() - 1; i >= 0; i--) {
-            if (humHaiYhaKeHero.charAt(i) == ' ') {
+        String s = string.trim();
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (s.charAt(i) == ' ') {
                 break;
             } else {
                 count++;
