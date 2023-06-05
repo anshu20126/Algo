@@ -11,6 +11,13 @@ public class ReverseLinkedList {
         head.next = null;
         return reverseList;
     }
+    public boolean isPalindrome(ListNode head) {
+        boolean reverseList = isPalindrome(head.next);
+
+        head.next.next = head;
+        head.next = null;
+        return reverseList;
+    }
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
