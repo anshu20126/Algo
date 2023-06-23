@@ -8,11 +8,11 @@ public class ReverseLinkedList {
       if (head==null || head.next==null){
           return head;
       }
-      ListNode p =reverseList(head.next);
+      ListNode reverse =reverseList(head.next);
 
       head.next.next=head;
       head.next=null;
-      return p;
+      return reverse;
     }
     public static void main(String[] args) {
 // Create the linked list [1, 2, 3, 4, 5]

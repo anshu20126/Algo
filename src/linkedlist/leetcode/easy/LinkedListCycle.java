@@ -3,24 +3,26 @@ package linkedlist.leetcode.easy;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode1 head) {
-    ListNode1 slow =head;
-        ListNode1 fast=head;
+        ListNode1 slow = head;
+        ListNode1 fast = head;
 
-        while (fast !=null && fast.next!=null){
-        slow=slow.next;
-        fast=fast.next.next;
-        if(slow==fast)
-            return true;
-    }
-    return false;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast)
+                return true;
+        }
+        return false;
     }
 }
-class ListNode1{
+
+class ListNode1 {
     int val;
     ListNode1 next;
-    ListNode1(int x){
-        val =x;
-        next =null;
+
+    ListNode1(int x) {
+        val = x;
+        next = null;
     }
 
 }

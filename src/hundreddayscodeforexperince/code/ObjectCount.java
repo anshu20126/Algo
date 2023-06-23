@@ -13,10 +13,10 @@ public class ObjectCount {
 
     public static void main(String[] args) {
         ObjectCount obj1 = new ObjectCount();
-        //ObjectCount obj2 = new ObjectCount();
+        ObjectCount obj2 = new ObjectCount();
         //ObjectCount obj3 = new ObjectCount();
 
-        int count = ObjectCount.getCount();
+        int count = getCount();
         System.out.println("Total objects created: " + count); // output: Total objects created: 3
     }
 }
