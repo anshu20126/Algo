@@ -1,14 +1,12 @@
 package linkedlist.leetcode.easy;
 
-import java.util.List;
-
 //https://leetcode.com/problems/reverse-linked-list/description/
 public class ReverseLinkedList {
-    public ListNode reverseList(ListNode head) {
+    public ListNodeq reverseList(ListNodeq head) {
       if (head==null || head.next==null){
           return head;
       }
-      ListNode reverse =reverseList(head.next);
+      ListNodeq reverse =reverseList(head.next);
 
       head.next.next=head;
       head.next=null;
@@ -16,14 +14,14 @@ public class ReverseLinkedList {
     }
     public static void main(String[] args) {
 // Create the linked list [1, 2, 3, 4, 5]
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
+        ListNodeq head = new ListNodeq(1);
+        head.next = new ListNodeq(2);
+        head.next.next = new ListNodeq(3);
+        head.next.next.next = new ListNodeq(4);
+        head.next.next.next.next = new ListNodeq(5);
 
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
-        ListNode reversedList = reverseLinkedList.reverseList(head);
+        ListNodeq reversedList = reverseLinkedList.reverseList(head);
 
         // Print the reversed list [5, 4, 3, 2, 1]
         while (reversedList != null) {
@@ -35,9 +33,9 @@ public class ReverseLinkedList {
 
 class ListNode{
     int val;
-    ListNode next;
+    ListNodeq next;
     ListNode(){}
     ListNode(int val){this.val=val;}
-    ListNode(int val,ListNode next){this.val=val;this.next=next;}
+    ListNode(int val, ListNodeq next){this.val=val;this.next=next;}
 }
 

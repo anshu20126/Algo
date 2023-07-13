@@ -1,7 +1,7 @@
 package linkedlist.leetcode.easy;
 //https://leetcode.com/problems/merge-two-sorted-lists/?envType=study-plan-v2&id=top-interview-150
 public class MergeTwoSortedLists {
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public ListNodeq mergeTwoLists(ListNodeq list1, ListNodeq list2) {
         while(list1!=null && list2!=null){
             if(list1.val<list2.val){
                 list1.next=mergeTwoLists(list1.next,list2);

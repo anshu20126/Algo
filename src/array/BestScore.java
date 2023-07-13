@@ -12,13 +12,12 @@ import java.util.Collections;
 
 public class BestScore {
     static String firstSecond(Integer[] myArray) {
-        Integer[] arr = myArray;
-        Arrays.sort(arr, Collections.reverseOrder());
-        int first = arr[0];
+        Arrays.sort(myArray, Collections.reverseOrder());
+        int first = myArray[0];
         Integer second = null;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != first) {
-                second = arr[i];
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] != first) {
+                second = myArray[i];
                 break;
             }
         }
