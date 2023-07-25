@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class JavaEightProgrammingQuestion {
     public static void main(String[] args) {
+
         //1.java program to count the occurrence of each character in a string
         // ilovejavatechie
         //a=2,c=1,t=1,e=3,v=2,h=1,i=2,j=1,l=1,0=1
@@ -66,7 +67,8 @@ public class JavaEightProgrammingQuestion {
                 .filter(s -> s.startsWith("1"))
                 .collect(Collectors.toList());
         System.out.println(stringList);
-        // 6 String join method
+
+        // 8 String join method
         List<String> nos = Arrays.asList("1", "2", "3", "4");
         //1-2-2-4
         String results1 = String.join(",", nos);
