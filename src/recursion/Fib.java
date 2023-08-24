@@ -2,7 +2,7 @@ package recursion;
 
 public class Fib {
     public static void main(String[] args) {
-        System.out.println(fib(0));
+        System.out.println(fib(10));
 
     }
     public static int fib(int n) {

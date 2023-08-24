@@ -11,8 +11,7 @@ public class EvenNumbersSorted {
     }
 
     static List<Integer> evenNumbersSorted(List<String> values) {
-        List<Integer> evenNumberSorted = values.stream().map(Integer::parseInt).filter(num -> num % 2 == 0).sorted()
+        return values.stream().map(Integer::parseInt).filter(num -> num % 2 == 0).sorted()
                 .collect(Collectors.toList());
-        return evenNumberSorted;
     }
 }

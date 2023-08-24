@@ -14,6 +14,7 @@ public class Singleton {
     }
 
     public static void main(String[] args) {
-        getInstance();
+        Singleton singleton = getInstance(); // Get the single instance
+        System.out.println("Singleton instance: " + singleton);
     }
 }

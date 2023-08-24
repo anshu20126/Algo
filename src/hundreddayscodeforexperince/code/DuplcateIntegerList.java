@@ -2,6 +2,7 @@ package hundreddayscodeforexperince.code;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class DuplcateIntegerList {
@@ -13,7 +14,9 @@ public class DuplcateIntegerList {
                 .entrySet()
                 .stream()
                 .filter(entry -> entry.getValue() > 1)
-                .map(entry -> entry.getKey())
+                .map(Map.Entry::getKey)
+              //  .map(entry -> entry.getKey())
+
                 .collect(Collectors.toList());
 
         System.out.println("Duplicate Integers: " + duplicates);

@@ -46,15 +46,6 @@ public class EmployeeProcessor {
             this.salary = salary;
             this.deptId = deptId;
         }
-
-        public int getId() {
-            return id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
         public double getSalary() {
             return salary;
         }
